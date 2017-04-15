@@ -1,0 +1,101 @@
+body {
+	background-color: rgba(0,0,0, 1);
+	color: white;
+	padding-bottom: 150px;
+}
+
+.pageTitle {
+	border-style: solid;
+	border-color: white;
+	border-width: 3px;
+	text-align: center;
+	background-color: rgba(255,255,255, .3);
+}
+
+.leftStatColumn, .rightStatColumn {
+	border-style: solid;
+	border-color: white;
+	border-width: 3px;
+}
+
+.leftStatColumn {
+	background-color: rgba(0,64,0, .5);
+}
+
+.rightStatColumn {
+	background-color: rgba(127,0,0, .5);
+}
+
+.characterProfileImg {
+	width: 75px;
+	margin: 5px auto;
+
+	padding: 5px;
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;
+
+}
+
+.leftStatColumn .rightStatColumn {
+	padding: 20px;
+	margin: 20px;
+}
+
+.gridMap {
+	height: 80px;
+	width: 80px;
+	float: left;
+
+	border-style: solid;
+	background-color: rgba(255,255,255,.3);
+	border-width: 1px;
+
+	background-color: #0b254f;
+}
+
+.grass {
+	background-color: green;
+	/*background: url("../images/grass.jpg");*/
+}
+
+.sand {
+	background-color: gray;
+	/*background: url("../images/sand.jpg");*/
+}
+
+.gridMapEndRow {
+	clear: both;
+}
+
+p {
+	text-align: center;
+	line-height: 1.2;
+}
+
+.gridMapWhole {
+	margin-left: 110px;
+}
+
+.navbar-fixed-bottom {
+	text-align: center;
+	padding-top: 15px;
+	color: white;
+	font-size: 16px;
+	background-color: rgba(0,0,0, 1);
+	border-top-style: solid;
+	border-top-color: white;
+	border-top-width: 2px;
+}
+
+.fightBtn {
+	margin-left: 130px;
+}
+
+.charOnGrid {
+	height: 60px;
+	padding: 3px;
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;
+}
