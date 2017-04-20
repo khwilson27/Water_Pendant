@@ -22,8 +22,8 @@ body {
 	border-color: white;
 	border-width: 3px;
 	width: 225px;
-	margin-left: 13px;
-	margin-right: 13px;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 .leftStatColumn {
@@ -76,7 +76,7 @@ p {
 
 .gridMapWhole {
 	margin: 0px auto;
-	width: 360px;
+	width: 330px;
 	margin-top: 20px;
 	margin-bottom: 40px;
 
