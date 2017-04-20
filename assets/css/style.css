@@ -13,14 +13,15 @@ body {
 	background-color: rgba(0,0,0,.5);
 	font-size: 30px;
 	padding: 10px;
-/*	font-variant: small-caps;*/
-	
 }
 
-.leftStatColumn, .rightStatColumn, .menuCol {
+.leftStatColumn, .rightStatColumn {
+	padding: 10px;
+	margin: 15px;
 	border-style: solid;
 	border-color: white;
 	border-width: 3px;
+	width: 225px;
 }
 
 .leftStatColumn {
@@ -32,24 +33,19 @@ body {
 }
 
 .characterProfileImg {
-	height: 100px;
+	height: 70px;
+	width: 65px;
+	margin: auto;
 
-	margin: 5px auto;
-
-	padding: 5px;
+	padding: 3px;
 	border-style: solid;
 	border-color: white;
 	border-width: 2px;
-
-}
-
-.leftStatColumn, .rightStatColumn {
-	padding: 5px;
 }
 
 .gridMap {
-	height: 80px;
-	width: 80px;
+	height: 60px;
+	width: 60px;
 	float: left;
 
 	border-style: solid;
@@ -60,13 +56,13 @@ body {
 }
 
 .grass {
-	background-color: green;
-	/*background: url("../images/grass.jpg");*/
+/*	background-color: green;*/
+	background: url("../images/grass.jpg");
 }
 
 .sand {
-	background-color: gray;
-	/*background: url("../images/sand.jpg");*/
+/*	background-color: gray;*/
+	background: url("../images/sand.jpg");
 }
 
 .gridMapEndRow {
@@ -80,9 +76,11 @@ p {
 
 .gridMapWhole {
 	margin: 0px auto;
-	margin-left: 100px;
-}
+	width: 360px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 
+}
 
 .navbar-fixed-bottom {
 	text-align: center;
@@ -95,16 +93,60 @@ p {
 	border-top-width: 2px;
 }
 
-.fightBtn {
-	margin-left: 130px;
-}
-
 .charOnGrid {
-	height: 60px;
+	height: 40px;
 	padding: 3px;
 	border-style: solid;
 	border-color: white;
 	border-width: 2px;
 	margin-top: 10px;
 
+}
+
+.btnRow {
+	background-color: rgba(0,0,0,.3);
+	border-style: solid;
+	border-color: white;
+	border-width: 3px;
+	padding: 5px;
+	margin: 0 auto;
+	margin-top: -30px;
+	width: 360px;
+	overflow: auto;
+}
+
+.endTurnBtn {
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.battleLogArea {
+	background-color: rgba(0,0,0,.3);
+	border-style: solid;
+	border-color: white;
+	border-width: 3px;
+	height: 300px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 98%;
+}
+
+.battleLog {
+	overflow-y: scroll;
+	height: 300px;
+}
+
+.turnPlayer, .turnEnemy {
+	float: left;
+	font-size: 27px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+}
+
+.turn {
+	background-color: rgba(255,255,255, .4);
 }

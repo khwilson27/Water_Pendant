@@ -30,9 +30,10 @@
 
       <div class="container-fluid">
             <div class="row">
-              <div class="col-sm-3 col-md-3 col-lg-3 leftStatColumn">
+              <div class="col-sm-2 col-md-2 col-lg-2 leftStatColumn">
+                  <!-- Your Characters Here -->
                   <div class="yourCharacterCol1 col-sm-6 col-md-6 col-lg-6">
-                      <div class="yourCharacter">
+                      <div class="character yourCharacter" data-atkRng=1>
                           <img class="characterProfileImg center-block" src="assets/images/character1.jpg">
                           <p id="yourCharacterName">CORDERLERIA</p>
                           <p id="yourCharacterHp">HP: 42</p>
@@ -43,7 +44,7 @@
                           <p id="yourCharacterMov">MOV: 2</p>
                       </div>
 
-                      <div class="yourCharacter">
+                      <div class="character yourCharacter">
                           <img class="characterProfileImg center-block" src="assets/images/character2.jpg">
                           <p id="yourCharacterName">ACHE</p>
                           <p id="yourCharacterHp">HP: 42</p>
@@ -56,19 +57,38 @@
                   </div>
 
                   <div class="yourCharacterCol2 col-sm-6 col-md-6 col-lg-6">
+<!--                        <div class="character yourCharacter">
+                          <img class="characterProfileImg center-block" src="assets/images/character1.jpg">
+                          <p id="yourCharacterName">CORDERLERIA</p>
+                          <p id="yourCharacterHp">HP: 42</p>
+                          <p id="yourCharacterAtk">ATK: 38</p>
+                          <p id="yourCharacterSpd">SPD: 34</p>
+                          <p id="yourCharacterDef">DEF: 30</p>
+                          <p id="yourCharacterRes">RES: 17</p>
+                          <p id="yourCharacterMov">MOV: 2</p>
+                      </div>
+
+                      <div class="character yourCharacter">
+                          <img class="characterProfileImg center-block" src="assets/images/character2.jpg">
+                          <p id="yourCharacterName">ACHE</p>
+                          <p id="yourCharacterHp">HP: 42</p>
+                          <p id="yourCharacterAtk">ATK: 38</p>
+                          <p id="yourCharacterSpd">SPD: 34</p>
+                          <p id="yourCharacterDef">DEF: 30</p>
+                          <p id="yourCharacterRes">RES: 17</p>
+                          <p id="yourCharacterMov">MOV: 2</p>
+                      </div> -->
                   </div>
             </div>
 
-<!--             <div class="col-sm-1 col-md-1 col-lg-1 menuCol">
-            </div> -->
-
-            <div class="col-sm-6 col-md-6 col-lg-6 gameBoard">
+            <!-- Game Board Here -->
+            <div class="col-sm-5 col-md-5 col-lg-5 gameBoard">
               <div class="gridMapWhole">
 
                     <div class="gridMap" id="x1y8"></div>
                     <div class="gridMap" id="x2y8"></div>
-                    <div class="gridMap sand" id="x3y8"></div>
-                    <div class="gridMap sand" id="x4y8"></div>
+                    <div class="gridMap" id="x3y8"></div>
+                    <div class="gridMap" id="x4y8"></div>
                     <div class="gridMap" id="x5y8"></div>
                     <div class="gridMap" id="x6y8"></div>
 
@@ -130,20 +150,27 @@
 
                     <div class="gridMap" id="x1y1"></div>
                     <div class="gridMap" id="x2y1"></div>
-                    <div class="gridMap grass" id="x3y1"></div>
-                    <div class="gridMap grass" id="x4y1"></div>
+                    <div class="gridMap" id="x3y1"></div>
+                    <div class="gridMap" id="x4y1"></div>
                     <div class="gridMap" id="x5y1"></div>
                     <div class="gridMap" id="x6y1"></div>
 
                     <div class="gridMapEndRow"></div>
 
                 </div>
+
+                <div class="btnRow">
+                    <p class="turnPlayer turn">Player Turn</p>
+                    <button type="button" class="btn btn-warning endTurnBtn">End Turn</button>
+                    <p class="turnEnemy">Enemy Turn</p>
+                </div>
+
             </div>
 
-
-              <div class="col-sm-3 col-md-3 col-lg-3 rightStatColumn">
+              <!-- Enemy Characters Here -->
+              <div class="col-sm-2 col-md-2 col-lg-2 rightStatColumn">
                    <div class="enemyCharacterCol1 col-sm-6 col-md-6 col-lg-6">
-                      <div class="enemyCharacter">
+                      <div class="character enemyCharacter">
                           <img class="characterProfileImg center-block" src="assets/images/character3.jpg">
                           <p id="enemyCharacterName">SAMUEL</p>
                           <p id="enemyCharacterHp">HP: 42</p>
@@ -154,7 +181,7 @@
                           <p id="enemyCharacterMov">MOV: 2</p>
                       </div>
 
-                      <div class="enemyCharacter">
+                      <div class="character enemyCharacter">
                           <img class="characterProfileImg center-block" src="assets/images/character4.png">
                           <p id="enemyCharacterName">ROB</p>
                           <p id="enemyCharacterHp">HP: 42</p>
@@ -167,10 +194,61 @@
                     </div>
 
                     <div class="enemyCharacterCol1 col-sm-6 col-md-6 col-lg-6">
+<!--                         <div class="character enemyCharacter">
+                              <img class="characterProfileImg center-block" src="assets/images/character3.jpg">
+                              <p id="enemyCharacterName">SAMUEL</p>
+                              <p id="enemyCharacterHp">HP: 42</p>
+                              <p id="enemyCharacterAtk">ATK: 38</p>
+                              <p id="enemyCharacterSpd">SPD: 34</p>
+                              <p id="enemyCharacterDef">DEF: 30</p>
+                              <p id="enemyCharacterRes">RES: 17</p>
+                              <p id="enemyCharacterMov">MOV: 2</p>
+                          </div>
+
+                          <div class="character enemyCharacter">
+                              <img class="characterProfileImg center-block" src="assets/images/character4.png">
+                              <p id="enemyCharacterName">ROB</p>
+                              <p id="enemyCharacterHp">HP: 42</p>
+                              <p id="enemyCharacterAtk">ATK: 38</p>
+                              <p id="enemyCharacterSpd">SPD: 34</p>
+                              <p id="enemyCharacterDef">DEF: 30</p>
+                              <p id="enemyCharacterRes">RES: 17</p>
+                              <p id="enemyCharacterMov">MOV: 2</p>
+                          </div> -->
                     </div>
-              </div>  
-          </div>
-    </div>
+              </div>
+          </div> <!-- row -->
+
+
+          <div class="row battleLogArea">
+            <div class="col-sm-6 col-md-6 col-lg-6 battlePreview">
+                <h2>Battle Preview: </h2>
+                <hr>
+
+                <div class="col-sm-6 col-md-6 col-lg-6 yourCharPreview">
+                    <img class="characterProfileImg center-block" src="assets/images/character3.jpg">
+                    <p id="yourCharNamePreview">CORDERLERIA</p>
+                    <p id="yourCharacterHpPreview">HP: 42 -> 32</p>
+                    <p id="yourCharacterAtkPreview">ATK: 5x2</p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 enemyCharPreview">
+                    <img class="characterProfileImg center-block" src="assets/images/character3.jpg">
+                    <p id="enemyCharacterNamePreview">CORDERLERIA</p>
+                    <p id="enemyCharacterHpPreview">HP: 42 -> 32</p>
+                    <p id="enemyCharacterAtkPreview">ATK: 5x2</p>
+                </div>
+
+            </div> 
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="battleLog">
+                    <h2>Battle Log: </h2>
+                    <hr>
+                    <p class="battleLogText">Praesent ac justo eu neque semper egestas. Aenean mattis massa at sollicitudin aliquam. Aenean eu sem et orci iaculis varius in et enim. Sed malesuada, justo nec viverra accumsan, augue risus pulvinar metus, sit amet condimentum sapien ligula at nibh. Duis congue, risus in pulvinar bibendum, lectus nunc dictum metus, at ornare diam lacus at metus. Phasellus ut tellus ut turpis porta varius non eu augue. Morbi id hendrerit ex. Quisque quis nisi sapien. Quisque finibus, lacus ut cursus bibendum, mauris enim dapibus ligula, a aliquam libero eros vel sem. Nunc egestas hendrerit orci, sed tristique nisi dapibus non. Donec volutpat maximus lectus, et fermentum lacus. Praesent commodo nibh urna, nec congue risus hendrerit sed.</p>
+                </div>
+            </div>  
+          </div> <!-- row -->
+
+    </div> <!-- container -->
 
       <!-- footer -->  
       <nav class="navbar navbar-default navbar-fixed-bottom">
